@@ -51,8 +51,6 @@ payload:
   #ACA
   - DOMAIN-SUFFIX,emby.aca.best
   - DOMAIN-SUFFIX,porn.aca.best
-  #熊猫tv
-  - DOMAIN-SUFFIX,v.emby.at
   #放映厅
   - DOMAIN-SUFFIX,emby.9191001.xyz
   #peach
