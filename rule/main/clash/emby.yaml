@@ -55,4 +55,24 @@ payload:
   - DOMAIN-SUFFIX,emby.9191001.xyz
   #peach
   - DOMAIN-SUFFIX,embymv.tk
-  
+  #ccemby
+  - DOMAIN-SUFFIX,cc.ccemby.tk
+  #jmsooo
+  - DOMAIN-SUFFIX,agahk1.jmsooo.com
+  - DOMAIN-SUFFIX,agasg1.jmsooo.com
+  - DOMAIN-SUFFIX,agajp1.jmsooo.com
+  - DOMAIN-SUFFIX,aws.jmsooo.com
+  - DOMAIN-SUFFIX,ntt1.jmsooo.com
+  - DOMAIN-SUFFIX,hinet.jmsooo.com
+  - DOMAIN-SUFFIX,cf1.jmsooo.com
+  #卡戎
+  - DOMAIN-SUFFIX,charontv.com
+  #mjjemby
+  - DOMAIN-SUFFIX,mjjemby.org
+  #PiliPili 
+  - DOMAIN-SUFFIX,pilipiliultra.top
+  - DOMAIN-SUFFIX,pilipiliultra.com
+  #pornemby
+  - DOMAIN-SUFFIX,pornemby.club
+  #私房菜Emby
+  - DOMAIN,notnetflix.cos.cat
