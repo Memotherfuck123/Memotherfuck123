@@ -138,14 +138,14 @@ auto:
   url: http://www.gstatic.com/generate_204
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 use:
   type: select
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 c:
   type: http
@@ -160,8 +160,8 @@ i:
   behavior: ipcidr
   interval: 86400
 proxy-providers:
-  ACA:
-    url: http://api.aca.best/api/v1/client/subscribe?token=7f6e24947b68da9a12a97f71e1090662
+  Subscribe1:
+    url: 
     path: ./all.yaml
     type: http
     interval: 3600
@@ -169,8 +169,8 @@ proxy-providers:
       enable: true
       url: http://1.1.1.1
       interval: 1800
-  ShinX:
-    url: https://shin-x.top/api/v1/client/subscribe?token=9b75e3cb97c050dee9bf9a7023452255
+  Subscribe2:
+    url: 
     path: ./all2.yaml
     type: http
     interval: 3600
@@ -179,7 +179,7 @@ proxy-providers:
       url: http://1.1.1.1
       interval: 1800
   Subscribe3:
-    url: https://privatess.lovecode.run/api/v1/client/subscribe?token=9b75e3cb97c050dee9bf9a7023452255
+    url: 
     path: ./all3.yaml
     type: http
     interval: 3600
@@ -192,8 +192,8 @@ proxy-groups:
 - name: 🚀 手动切换
   type: select
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: 🌏 国外网站
   type: select
@@ -251,8 +251,8 @@ proxy-groups:
 - name: 📟 电报消息
   type: select
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   proxies:
   - 🚀 手动切换
   - 🇭🇰 香港节点
@@ -300,14 +300,14 @@ proxy-groups:
 - name: 🌈 EMBY
   type: select
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: emby黑名单
   type: select
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
   proxies:
   - DIRECT
@@ -352,8 +352,8 @@ proxy-groups:
   url: http://1.1.1.1
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: 🇺🇲 美国节点
   filter: (?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!(香港|台湾|日本|新加坡|韩国|狮城|南朝鲜|SG|JP|KR|HK|TW|台灣|韓國|獅城)).)*$
@@ -362,8 +362,8 @@ proxy-groups:
   url: http://www.1.1.1.1
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: 🇸🇬 狮城节点
   filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"
@@ -372,8 +372,8 @@ proxy-groups:
   url: http://www.1.1.1.1
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: 🇯🇵 日本节点
   filter: "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"
@@ -382,8 +382,8 @@ proxy-groups:
   url: http://www.1.1.1.1
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: 🇹🇷 土耳其节点
   filter: "(?i)🇹🇷|土耳其|(\b(Türkiye|TR)\b)"
@@ -392,8 +392,8 @@ proxy-groups:
   url: http://www.1.1.1.1
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: 🇦🇷 阿根廷
   filter: (?=.*(阿根廷|Argentina|argentina|AR))^((?!(港|日|韩|新|美)).)*$
@@ -402,8 +402,8 @@ proxy-groups:
   url: http://www.1.1.1.1
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: 🇬🇧 英国节点
   filter: "(?i)🇬🇧|英国|伦敦|(\b(UK|United Kingdom)\b)"
@@ -412,8 +412,8 @@ proxy-groups:
   url: http://1.1.1.1
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 - name: ♻️ 自动选择
   type: url-test
@@ -421,8 +421,8 @@ proxy-groups:
   url: http://1.1.1.1
   interval: 900
   use:
-  - ACA
-  - ShinX
+  - Subscribe1
+  - Subscribe2
   - Subscribe3
 rule-providers:
   Direct:
