@@ -431,6 +431,12 @@ rule-providers:
     type: http
     behavior: domain
     interval: 86400
+  China:
+    url: https://githubproxy.pikminea.workers.dev/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical.yaml
+    path: ./ruleset/China-Classical.yaml
+    type: http
+    behavior: classical
+    interval: 86400
   Lan:
     url: https://githubproxy.pikminea.workers.dev/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
     path: ./ruleset/Lan.yaml
@@ -540,6 +546,7 @@ rule-providers:
     interval: 86400
 rules:
 - RULE-SET,Direct,DIRECT
+- RULE-SET,China,DIRECT
 - RULE-SET,Lan,DIRECT
 - RULE-SET,Download,DIRECT
 - RULE-SET,HTTPDNS,🛑 AdBlock
