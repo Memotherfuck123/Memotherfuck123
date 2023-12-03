@@ -7,7 +7,7 @@
 作者：@Key @奶茶姐 @小一 @可莉🅥
 用法：Sub-Store脚本操作里添加，缓存默认48小时。
 日期：2023-11-17 08:10:38
-示例：https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Sub-Store/NodeRename.js#bs=10&timeout=2000&cd=2000&iisp&flag&city&fgf=→&name=[方括号内填写你的机场名称]
+示例：https://raw.githubusercontent.com/Memotherfuck123/Memotherfuck123/main/Script/Sub-Store/NodeRename.js#bs=10&timeout=1200&cd=1200&iisp&flag&city&fgf=→&name=[方括号内填写你的机场名称]
 ----------------
 以下是此脚本支持的参数，必须以"#"开头，多个参数使用"&"连接，参考上述地址为例使用参数；
 无参数时的节点命名格式: "美国 01"，如果[入口IP或国家]或[落地IP或国家]一样则为 "直连 德国 01"；
@@ -162,7 +162,7 @@ const SUB_STORE_SCHEMA = {
       datatype: "number",
       description:
         "当无任何节点缓存时测试节点HTTP延时允许的最大超时参数，超出允许范围则判定为无效节点，默认2000ms",
-      defaultValue: 2000,
+      defaultValue: 1200,
     },
     cd: {
       datatype: "number",
@@ -198,7 +198,7 @@ let FGF = iar.fgf == undefined ? " " : decodeURI(iar.fgf),FGFS = FGF,debug = iar
 const { yw, bl, iisp, xy,  yisp, yun, city, flag, inflag, game, yuan, sheng, offtz, snone: numone} = iar;
 const h = iar.h ? decodeURI(iar.h) : "",min = iar.min ? decodeURI(iar.min) : "",firstN = iar.name ? decodeURI(iar.name) : "";
 const XHFGF = iar.sn == undefined ? " " : decodeURI(iar.sn),{ isLoon: isLoon, isSurge: isSurge } = $substore.env, dns = iar.dnsjx,target = isLoon ? "Loon" : isSurge ? "Surge" : undefined,keypr= "peedtest";
-let cd = iar.cd ? iar.cd : 0, timeout = iar.timeout ? iar.timeout : 2000, writet = "", innum = 1728e5, loontrue = false, onen = false, Sue = false, rawtime = 1500;
+let cd = iar.cd ? iar.cd : 0, timeout = iar.timeout ? iar.timeout : 1200, writet = "", innum = 1728e5, loontrue = false, onen = false, Sue = false, rawtime = 1500;
 const keyp = "3.s",EXPIRATION_KEY = "#sub-store-csr-expiration-time";
 if (min !== "") {
   Sue = true;
