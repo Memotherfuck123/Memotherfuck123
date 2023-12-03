@@ -105,7 +105,7 @@ const SUB_STORE_SCHEMA = {
     yisp: {
       datatype: "boolean",
       description: "显示落地详细运营商名称",
-      defaultValue: false,
+      defaultValue: true,
     },
     yw: {
       datatype: "boolean",
