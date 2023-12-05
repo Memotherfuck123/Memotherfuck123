@@ -115,7 +115,7 @@ rules:
 - domain:
     match: ifconfig.me
     policy: 直连
-- domain_set: 
+- domain: 
     match: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
     policy: 所有代理
 - domain_suffix:
