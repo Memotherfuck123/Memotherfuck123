@@ -97,9 +97,27 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_Domain.list
     policy: 苹果
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+    policy: 直连
+- rule_set:
+    match: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
+    policy: 所有代理
+- rule_set:
+    match: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    policy: 所有代理
+- rule_set:
+    match: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt
+    policy: 所有代理
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list
+    policy: 推特
 - domain:
     match: ifconfig.me
     policy: 直连
+- domain_set: 
+    match: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
+    policy: 所有代理
 - domain_suffix:
     match: cn
     policy: 直连
